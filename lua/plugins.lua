@@ -17,6 +17,10 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim' -- Packer 可以管理自己
 
     -- 你可以在这里添加更多插件
+    use 
+    {
+       'nvim-tree/nvim-tree.lua'
+    }
 
     if packer_bootstrap then
         require('packer').sync()
